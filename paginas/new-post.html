@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/new-post/new-post.css">
+
+        <script
+            src="https://kit.fontawesome.com/7d4e12bf26.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Crear Post</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="d-flex space-around">
+                <li class="mx-5">
+                    <a href="/"><i class="fas fa-home"></i><p>Home</p></a>
+                </li>
+                <li class="mx-5">
+                    <a href="paginas/new-post.html"><i class="fas fa-plus"></i><p>Nuevo Post</p></a>
+                </li>
+                <li class="mx-5">
+                    <a href="paginas/categorias.html"><i class="fas fa-list"></i><p>Categorias</p></a>
+                </li>
+                <li>
+                    <a href="paginas/faq.html"><i class="fas fa-question"></i> <p>FAQ</p> </a>
+                </li>
+                <li>
+                    <a href="paginas/about.html"><i class="fas fa-comment"></i><p>About</p></a>
+                </li>
+                <li>
+                    <a href="paginas/contacto.html"><i class="fas fa-envelope"></i><p>Contacto</p></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <aside>
+                <div id="user__container">
+                    <div id="user__image">NU</div>
+                    <h4>Nombre Usuario</h4>
+                </div>
+
+                <h2>Categorias</h2>
+                <div id="categorias__container">
+                    <ul>
+                        <li> <a href=""><i class="fas fa-running"></i> Categoria</a> </li>
+                        <li> <a href=""><i class="fas fa-gamepad"></i> Categoria</a> </li>
+                        <li> <a href=""><i class="fas fa-running"></i> Categoria</a> </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="mx-5">
+                <h2>Crear nuevo post</h2>
+                <div class="newpost__container">
+                    <label for="title">Titulo</label>
+                    <input type="text" id="title" name="title">
+                    
+                    <label for="file"><i class="far fa-image"></i> Seleccionar imagen</label>
+                    <input type="file" name="file" id="file">
+
+                    <label for="content">Contenido</label>
+                    <textarea name="content" id="content" rows="10"></textarea>
+                </div>
+            </main>
+            
+            <section class="mx-5">
+                section
+                <!-- Trending posts -->
+            </section>
+        </div>
+
+
+        <footer>
+            <div>
+                © 2020 Copyright:
+                <a class="text-dark" href="">Sin derechos</a>
+            </div>
+        </footer>
+    </body>
+</html>
