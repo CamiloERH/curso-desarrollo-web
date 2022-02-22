@@ -8,7 +8,8 @@
    ],
    "liveSassCompile.settings.excludeList": [
       "**/node_modules/**",
-      ".vscode/**"
+      ".vscode/**",
+      "**/libs/**"
    ],
    "liveSassCompile.settings.generateMap": true,
    "liveSassCompile.settings.autoprefix": [

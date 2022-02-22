@@ -1,4 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Roboto&display=swap");
+
 .newpost__container {
     display: flex;
     flex-direction: column;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: space-around;
+    gap: 0px 4rem;
+    padding: 0px 16rem;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    background-color: rgb(140, 209, 255, 0.9);
+    padding: 0px 0px;
+    margin-bottom: 1.5rem;
+    top: 0px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: rgb(0, 96, 182);
+    font-size: 1.2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 200, 0.1);
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(140, 209, 255, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid rgba(140, 209, 255, 1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+
+section {
+    width: 100%;
+    background-color: rgb(140, 209, 255, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid rgba(140, 209, 255, 1);
+}
+
+footer {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: rgb(140, 209, 255, 0.9);
+    padding: 1rem;
+}
+
+.post__container {
+    border: 1px solid rgba(140, 209, 255, 1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.post__container:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.post__title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(140, 209, 255, 0.2);
+    height: 100%;
+    padding: 0.6rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.post__body {
+    display: flex;
+    height: 100%;
+    user-select: none;
+}
+
+.post__image {
+    height: 100%;
+    width: 30%;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.post__content {
+    padding: 1rem;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+#user__container {
+    display: flex;
+    gap: 0.5rem 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+#user__container a {
+    color: rgba(0, 96, 182, 0.9);
+}
+
+#user__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(190, 213, 222);
+    border-radius: 50%;
+}
+
+.vote {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: 0px 5px;
+}
+
+.vote i:hover {
+    transform: scale(1.1);
+}
+
+#categorias__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#categorias__container ul li {
+    margin: 30px 0px 30px 0px;
+}
+
+#categorias__container ul li a {
+    color: rgba(0, 96, 182, 0.9);
+}
+
+#categorias__container ul li:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+#trend__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#trend__container ul li {
+    margin: 30px 0px 30px 0px;
+}
+
+
+
+#trend__container ul li a {
+    color: rgba(0, 96, 182, 0.9);
+}
+
+input[type="text"],
+textarea {
+    border: 1px solid rgb(190, 213, 222);
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label[for="file"] {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    background-color: rgb(190, 213, 222);
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px 0px;
 }

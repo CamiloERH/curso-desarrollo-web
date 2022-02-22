@@ -3,82 +3,160 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link rel="stylesheet" href="../css/new-post/new-post.css">
-
         <script
             src="https://kit.fontawesome.com/7d4e12bf26.js"
             crossorigin="anonymous"
         ></script>
+        <link rel="stylesheet" href="../css/estilos.css" />
         <title>Crear Post</title>
     </head>
-    <body>
-        <nav>
-            <ul class="d-flex space-around">
-                <li class="mx-5">
-                    <a href="/"><i class="fas fa-home"></i><p>Home</p></a>
-                </li>
-                <li class="mx-5">
-                    <a href="paginas/new-post.html"><i class="fas fa-plus"></i><p>Nuevo Post</p></a>
-                </li>
-                <li class="mx-5">
-                    <a href="paginas/categorias.html"><i class="fas fa-list"></i><p>Categorias</p></a>
-                </li>
-                <li>
-                    <a href="paginas/faq.html"><i class="fas fa-question"></i> <p>FAQ</p> </a>
-                </li>
-                <li>
-                    <a href="paginas/about.html"><i class="fas fa-comment"></i><p>About</p></a>
-                </li>
-                <li>
-                    <a href="paginas/contacto.html"><i class="fas fa-envelope"></i><p>Contacto</p></a>
-                </li>
-            </ul>
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div
+                        class="navbar-nav flex-grow-1 d-flex justify-content-around"
+                    >
+                        <a
+                            class="nav-link"
+                            aria-current="page"
+                            href="../paginas/../index.html"
+                            ><i class="fas fa-home"></i> Home</a
+                        >
+                        <a class="nav-link" href="#"
+                            ><i class="fas fa-plus"></i> Nuevo Post</a
+                        >
+                        <a class="nav-link" href="./paginas/categorias.html"
+                            ><i class="fas fa-list"></i> Categorias</a
+                        >
+                        <a class="nav-link" href="./paginas/faq.html"
+                            ><i class="fas fa-question"></i> FAQ</a
+                        >
+                        <a class="nav-link" href="./paginas/about.html"
+                            ><i class="fas fa-comment"></i> About</a
+                        >
+                        <a class="nav-link" href="./paginas/contacto.html"
+                            ><i class="fas fa-envelope"></i> Contacto</a
+                        >
+                    </div>
+                </div>
+            </div>
         </nav>
 
-        <div class="container">
-            <aside>
-                <div id="user__container">
-                    <div id="user__image">NU</div>
-                    <h4>Nombre Usuario</h4>
-                </div>
+        <div class="row m-5 p-5 gx-5">
 
-                <h2>Categorias</h2>
-                <div id="categorias__container">
-                    <ul>
-                        <li> <a href=""><i class="fas fa-running"></i> Categoria</a> </li>
-                        <li> <a href=""><i class="fas fa-gamepad"></i> Categoria</a> </li>
-                        <li> <a href=""><i class="fas fa-running"></i> Categoria</a> </li>
-                    </ul>
-                </div>
-            </aside>
+            <div class="col-3">
+                <div class="shadow-sm bg-white border rounded">
+                    <div class="m-5">
+                        <h2><span class="badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-user"></i> Usuario</span></h2>
+                        <div class="mt-4 d-flex flex-column align-items-center">
+                            <img class="border rounded-circle w-50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKNVtRdOiTsz9S7RgCiVrllBBN6c2EFpna6tvo3TY3tk6GyjG8zSxfm6iljuiVb7DHqgM&usqp=CAU" alt="imagen_perfil">
+                            <h3 class="text-center">Nombre Usuario</h3>
+                        </div>        
+                    </div> 
+                    <div>
+                        <h2><span class="mx-5 badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-list"></i> Categorias</span></h2>
+                        <div class="mt-4 d-flex flex-column align-items-center w-100">
+                            <div class="list-group-flush rounded w-100">
+                                <button class="list-group-item w-100"><h5 class="mb-1"><i class="fas fa-running"></i> Categoria </h5>
+                                <button class="list-group-item w-100"><h5 class="mb-1"><i class="fas fa-gamepad"></i> Categoria </h5>
+                                <button class="list-group-item w-100 active"><h5 class="mb-1"><i class="fas fa-gamepad"></i> Categoria </h5>
+                            </div>
+                        </div>   
+                    </div>
 
-            <main class="mx-5">
-                <h2>Crear nuevo post</h2>
-                <div class="newpost__container">
-                    <label for="title">Titulo</label>
-                    <input type="text" id="title" name="title">
-                    
-                    <label for="file"><i class="far fa-image"></i> Seleccionar imagen</label>
-                    <input type="file" name="file" id="file">
+                </div>  
+            </div>
 
-                    <label for="content">Contenido</label>
-                    <textarea name="content" id="content" rows="10"></textarea>
+            <div class="col-6">
+                <h2>
+                    <span
+                        class="badge rounded-pill shadow-sm bg-secondary text-dark"
+                        ><i class="fas fa-plus"></i> Crear Nuevo Articulo
+                    </span>
+                </h2>
+
+                <div class="col-12">
+                    <div class="p-5 bg-white border rounded shadow-sm">
+                        <form>
+                            <div class="mb-3">
+                                <label for="title" class="form-label"
+                                    >Titulo</label
+                                >
+                                <input
+                                    id="title"
+                                    type="text"
+                                    class="form-control"
+                                />
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label"
+                                        >Imagen</label
+                                    >
+                                    <input
+                                        class="form-control"
+                                        type="file"
+                                        id="formFile"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label
+                                    for="textarea"
+                                    class="form-label"
+                                    >Contenido</label
+                                >
+                                <textarea
+                                    class="form-control"
+                                    id="textarea"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Enviar 
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </main>
-            
-            <section class="mx-5">
-                section
-                <!-- Trending posts -->
-            </section>
+            </div>
+
+            <div class="col-3">
+                <div class="bg-white border rounded shadow-sm">
+                    <h2><span class="mx-5 mt-5 badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-star"></i> Trending </span></h2>
+                    <div class="my-4 list-group list-group-flush">
+                        <a class="list-group-item" href="#">Post 1</a>
+                        <a class="list-group-item" href="#">Post 2</a>
+                        <a class="list-group-item" href="#">Post 3</a>
+                        <a class="list-group-item" href="#">Post 4</a>
+                        <a class="list-group-item" href="#">Post 5</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-
-        <footer>
-            <div>
-                © 2020 Copyright:
-                <a class="text-dark" href="">Sin derechos</a>
-            </div>
+        <footer
+            class="p-2 container-fluid bg-primary text-center sticky-bottom"
+        >
+            <p>@ 2022 No Copyright</p>
         </footer>
+
+        <script src="../libs/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
     </body>
 </html>

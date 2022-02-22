@@ -1,3 +1,9 @@
-.fuente {
-    font-size: 12px;
-}
+$principal: rgb(140, 209, 255);
+
+// Modificando las variables de Bootstrap
+
+$primary: $principal;
+$secondary: rgb(221,221,221);
+
+@import '../libs/bootstrap-5.0.2/scss/bootstrap';
+

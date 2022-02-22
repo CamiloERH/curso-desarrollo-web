@@ -3,195 +3,118 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/styles.css" />
         <script
             src="https://kit.fontawesome.com/7d4e12bf26.js"
             crossorigin="anonymous"
         ></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <title>Index</title>
+        <link rel="stylesheet" href="css/estilos.css" />
+        <title>Home</title>
     </head>
-    <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/"><i class="fas fa-home"></i><p>Home</p></a>
-                </li>
-                <li>
-                    <a href="paginas/new-post.html"><i class="fas fa-plus"></i><p>Nuevo Post</p></a>
-                </li>
-                <li>
-                    <a href="paginas/categorias.html"><i class="fas fa-list"></i><p>Categorias</p></a>
-                </li>
-                <li>
-                    <a href="paginas/faq.html"><i class="fas fa-question"></i><p>FAQ</p></a>
-                </li>
-                <li>
-                    <a href="paginas/about.html"><i class="fas fa-comment"></i><p>About</p></a>
-                </li>
-                <li>
-                    <a href="paginas/contacto.html"><i class="fas fa-envelope"></i><p>Contacto</p></a>
-                </li>
-            </ul>
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav flex-grow-1 d-flex justify-content-around">
+                        <a class="nav-link" aria-current="page" href="#"
+                            ><i class="fas fa-home"></i> Home</a
+                        >
+                        <a class="nav-link" href="./paginas/new-post.html"><i class="fas fa-plus"></i> Nuevo Post</a>
+                        <a class="nav-link" href="./paginas/categorias.html"><i class="fas fa-list"></i> Categorias</a>
+                        <a class="nav-link" href="./paginas/faq.html"><i class="fas fa-question"></i> FAQ</a>
+                        <a class="nav-link" href="./paginas/about.html"><i class="fas fa-comment"></i> About</a>
+                        <a class="nav-link" href="./paginas/contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
-        <div class="container">
-          
-            <aside>
-                <h2>Usuario</h2>
-                <div id="user__container">
-                    <div id="user__image">NU</div>
-                    <a href=""><h3>Nombre Usuario</h3></a>
-                </div>
-
-                <h2>Categorias</h2>
-                <div id="categorias__container">
-                    <ul>
-                        <li> <a href=""><i class="fas fa-running"></i> Categoria</a></li>
-                        <li> <a href=""><i class="fas fa-gamepad"></i> Categoria</a> </li>
-                        <li> <a href=""><i class="fas fa-running"></i> Categoria</a> </li>
-                    </ul>
-                </div>
-            </aside>
-
-            <main>
-                <h2>Nuevos Posts</h2>
-                <!-- Post 1 -->
-                <div class="post__container animate__animated animate__fadeIn">
-                    <div class="post__title">
-                        <h3>Comer pizza cada dia alarga la vida</h3>
-                        <div>
-                            <button class="vote">
-                                <i
-                                    class="fas fa-thumbs-up"
-                                    style="color: green"
-                                ></i>
-                            </button>
-                            <button class="vote">
-                                <i
-                                    class="fas fa-thumbs-down"
-                                    style="color: red"
-                                ></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="post__body">
-                        <img class="post__image" src="https://image.freepik.com/foto-gratis/vista-superior-rebanadas-pizza-salami_23-2148765311.jpg">
-
-                        </img>
-                        <div class="post__content">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, adipisci quas! Laudantium cumque a quibusdam exercitationem, labore placeat consectetur deleniti aspernatur. Commodi pariatur sint cum, perferendis rem dignissimos sequi exercitationem?
-                        </div>   
-                    </div>
-                </div>
-
-                <!-- Post 2 -->
-                <div class="post__container animate__animated animate__fadeIn">
-                    <div class="post__title">
-                        <h3>Comer pizza cada dia alarga la vida</h3>
-                        <div>
-                            <button class="vote">
-                                <i
-                                    class="fas fa-thumbs-up"
-                                    style="color: green"
-                                ></i>
-                            </button>
-                            <button class="vote">
-                                <i
-                                    class="fas fa-thumbs-down"
-                                    style="color: red"
-                                ></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="post__body">
-                        <img class="post__image" src="https://image.freepik.com/foto-gratis/vista-superior-rebanadas-pizza-salami_23-2148765311.jpg">
-
-                        </img>
-                        <div class="post__content">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, adipisci quas! Laudantium cumque a quibusdam exercitationem, labore placeat consectetur deleniti aspernatur. Commodi pariatur sint cum, perferendis rem dignissimos sequi exercitationem?
-                        </div>   
-                    </div>
-                </div>
-
-                 <!-- Post 3 -->
-                 <div class="post__container animate__animated animate__fadeIn">
-                    <div class="post__title">
-                        <h3>Chequea este curso de programación</h3>
-                        <div>
-                            <button class="vote">
-                                <i
-                                    class="fas fa-thumbs-up"
-                                    style="color: green"
-                                ></i>
-                            </button>
-                            <button class="vote">
-                                <i
-                                    class="fas fa-thumbs-down"
-                                    style="color: red"
-                                ></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="post__body">
-                        <img class="post__image" src="images/rsz_1pexels-lukas-574071.jpg">
-
-                        </img>
-                        <div class="post__content">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, adipisci quas! Laudantium cumque a quibusdam exercitationem, labore placeat consectetur deleniti aspernatur. Commodi pariatur sint cum, perferendis rem dignissimos sequi exercitationem?
-                        </div>   
-                    </div>
-                </div>
-                <!-- Post 4 -->
-                <div class="post__container animate__animated animate__fadeIn">
-                    <div class="post__title">
-                        <h3>Chequea este curso de programación</h3>
-                        <div>
-                            <button class="vote">
-                                <i
-                                    class="fas fa-thumbs-up"
-                                    style="color: green"
-                                ></i>
-                            </button>
-                            <button class="vote">
-                                <i
-                                    class="fas fa-thumbs-down"
-                                    style="color: red"
-                                ></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="post__body">
-                        <img class="post__image" src="images/rsz_1pexels-lukas-574071.jpg">
-
-                        </img>
-                        <div class="post__content">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, adipisci quas! Laudantium cumque a quibusdam exercitationem, labore placeat consectetur deleniti aspernatur. Commodi pariatur sint cum, perferendis rem dignissimos sequi exercitationem?
-                        </div>   
-                    </div>
-                </div>
-            </main>
-
-            <section>
-                <h2>Trending Post</h2>
-                <div id="trend__container">
-                    <ul>
-                        <li> <a href=""> Titulo </a> </li>
-                        <li> <a href=""> Titulo </a> </li>
-                    </ul>
-
-                </div>
-            </section>
-
-        </div>
-        <footer>
-            <div>
-                © 2022 Copyright:
-                <a class="text-dark" href="">Sin derechos</a>
+        <!-- <div class="px-4 pt-5 text-center border-bottom bg-light">
+            <h1 class="display-4 fw-bold">Centered screenshot</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+              </div>
             </div>
+        </div> -->
+
+       
+        <div class="row m-5 p-5 gx-5">
+            <div class="col-3">
+                <div class="shadow-sm bg-white border rounded">
+                    <div class="m-5">
+                        <h2><span class="badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-user"></i> Usuario</span></h2>
+                        <div class="mt-4 d-flex flex-column align-items-center">
+                            <img class="border rounded-circle w-50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKNVtRdOiTsz9S7RgCiVrllBBN6c2EFpna6tvo3TY3tk6GyjG8zSxfm6iljuiVb7DHqgM&usqp=CAU" alt="imagen_perfil">
+                            <h3 class="text-center">Nombre Usuario</h3>
+                        </div>        
+                    </div> 
+                    <div>
+                        <h2><span class="mx-5 badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-list"></i> Categorias</span></h2>
+                        <div class="mt-4 d-flex flex-column align-items-center w-100">
+                            <div class="list-group-flush rounded w-100">
+                                <button class="list-group-item w-100"><h5 class="mb-1"><i class="fas fa-running"></i> Categoria </h5>
+                                <button class="list-group-item w-100"><h5 class="mb-1"><i class="fas fa-gamepad"></i> Categoria </h5>
+                                <button class="list-group-item w-100 active"><h5 class="mb-1"><i class="fas fa-gamepad"></i> Categoria </h5>
+                            </div>
+                        </div>   
+                    </div>
+
+                </div>  
+            </div>
+
+            <div class="col-6">
+                <h2><span class="badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-newspaper"></i> Nuevos Articulos </span></h2>
+                <div id="postContainer" class="col-12">
+                    
+                    <!-- post 1 -->
+                    <div class="mb-3 card d-flex flex-row">
+                        <img class="card-img-left" style="width: 18rem;" src="./images/rsz_1pexels-lukas-574071.jpg" alt="computer">
+                        <div class="card-body">
+                            <h5 class="card-title">Chequea este curso de Programación</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary stretched-link">Leer</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="bg-white border rounded shadow-sm">
+                    <h2><span class="mx-5 mt-5 badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-star"></i> Trending </span></h2>
+                    <div class="my-4 list-group list-group-flush">
+                        <a class="list-group-item" href="#">Post 1</a>
+                        <a class="list-group-item" href="#">Post 2</a>
+                        <a class="list-group-item" href="#">Post 3</a>
+                        <a class="list-group-item" href="#">Post 4</a>
+                        <a class="list-group-item" href="#">Post 5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer class="p-2 container-fluid bg-primary text-center sticky-bottom">
+            <p>
+                @ 2022 No Copyright
+            </p>
         </footer>
+
+        <script src="js/script.js"></script>
+        <script src="libs/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
     </body>
 </html>
