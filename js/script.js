@@ -1,39 +1,80 @@
-const postContainer = document.getElementById('postContainer');
+const posts = [
+    { titulo: "Titulo 1", contenido: "Some quick example text to build on the card title and make up the bulk of the card's content.", categorias: ["Programación"]},
+    { titulo: "Titulo 2", contenido: "Some quick example text to build on the card title and make up the bulk of the card's content.", categorias: ["Informativo", "Videojuegos"] },
+    { titulo: "Titulo 3", contenido: "Some quick example text to build on the card title and make up the bulk of the card's content.", categorias: ["Videojuegos"] },
+    { titulo: "Titulo 4", contenido: "Some quick example text to build on the card title and make up the bulk of the card's content.", categorias: ["Videojuegos"] },
+    { titulo: "Titulo 4", contenido: "Some quick example text to build on the card title and make up the bulk of the card's content.", categorias: ["Informativo"] },
+];
 
-for(let i = 0; i < 4; i++){
-    postContainer.appendChild( createPostStructure() );
-}
+const postContainer = document.getElementById("postContainer");
 
-function createPostStructure() {
-    const divContainer = document.createElement('div');
-    divContainer.className = 'mb-3 card d-flex flex-row';
+posts.forEach(post => {
+    const { titulo, contenido, categorias } = post;
+    postContainer.appendChild(createPostStructure(titulo, contenido, categorias));
+});
 
-    const img = document.createElement('img');
-    img.classList = 'card-img-left';
-    img.style.width = '18rem';
-    img.src = './images/rsz_1pexels-lukas-574071.jpg';2
 
-    const divBody = document.createElement('div');
-    divBody.className = 'card-body';
+function createPostStructure(titulo, contenido, categorias) {
+    const divContainer = document.createElement("div");
+    divContainer.className = "mb-3 card d-flex flex-row";
 
-    const h5 = document.createElement('h5');
-    h5.className = 'card-title';
-    h5.innerText = 'Chequea este curso de Programación';
+    const divImg = document.createElement("div");
 
-    const p = document.createElement('p');
-    p.className = 'card-text';
-    p.innerText = "Some quick example text to build on the card title and make up the bulk of the card's content";
+    const img = document.createElement("img");
+    img.classList = "card-img-left";
+    img.src = "./images/computer-sm.jpg";
 
-    const a = document.createElement('a');
-    a.className = 'btn btn-primary stretched-link';
-    a.innerText = 'Leer';
+    const divBody = document.createElement("div");
+    divBody.className = "card-body";
+
+    const h5 = document.createElement("h5");
+    h5.className = "card-title";
+    h5.innerText = titulo;
+
+    const p = document.createElement("p");
+    p.className = "card-text";
+    p.innerText = contenido;
+
+    const a = document.createElement("a");
+    a.className = "btn btn-info stretched-link";
+    a.innerText = "Leer";
+
+    const divCategorias = document.createElement("div");
+    divCategorias.className = "mt-2 gap-2 d-flex flex-row flex-wrap justify-content-end";
+    categorias.forEach(categoria => {
+        const span = document.createElement("span");
+        span.className = "badge rounded-pill bg-info text-dark";
+        span.textContent = categoria;
+        divCategorias.appendChild(span);
+    });
 
     divBody.appendChild(h5);
     divBody.appendChild(p);
     divBody.appendChild(a);
+    divBody.appendChild(divCategorias);
 
-    divContainer.appendChild(img);
+    divImg.appendChild(img);
+
+    divContainer.appendChild(divImg);
     divContainer.appendChild(divBody);
     
+    divContainer.classList.add('cardFadeIn');
+
     return divContainer;
 }
+
+const categoriasButtons = document.querySelectorAll('#categoriasDiv > button');
+
+categoriasButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        categoriasButtons.forEach(button => {
+            button.classList.remove('active');
+        });
+        button.classList.add('active');
+        const postFiltrados = posts.filter(post => post.categorias.includes(button.value));
+        postContainer.innerHTML = "";
+        postFiltrados.forEach(({titulo, contenido, categorias}) => {
+            postContainer.appendChild(createPostStructure(titulo, contenido, categorias));
+        });
+    });
+});
