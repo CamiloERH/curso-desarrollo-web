@@ -3,10 +3,9 @@
 // Modificando las variables de Bootstrap
 $primary: rgb(88, 160, 204);
 $info: rgb(140, 209, 255);
-$secondary: rgb(207,216,220);
+$secondary: rgb(207, 216, 220);
 
-@import '../libs/bootstrap-5.0.2/scss/bootstrap';
-
+@import "../libs/bootstrap-5.0.2/scss/bootstrap";
 
 .card-img-left {
     max-width: 15vw;
@@ -23,14 +22,70 @@ nav {
             background-color: $info;
             opacity: 1;
         }
+        &.active {
+            background-color: $info;
+        }
     }
 }
 
 .parallax {
     background-image: url("https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1572&q=80");
-    min-height: 500px; 
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+
+    &__container {
+        border-radius: 5px;
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+        position: relative;
+
+        
+        & .categorias__content {
+            z-index: 1;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            cursor: pointer;
+            .categorias__content {
+                opacity: 1;
+            }
+
+            .categorias__img {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    &__img {
+        border-radius: 5px;
+        width: 100%;
+        max-height: 100%;
+        transition: 0.5s ease;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+        .categorias__content {
+            opacity: 1;
+        }
+
+        .categorias__img {
+            opacity: 0.3;
+        }
+    }
 }

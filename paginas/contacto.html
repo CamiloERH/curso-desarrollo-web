@@ -3,50 +3,166 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/7d4e12bf26.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="../css/estilos.css" />
         <title>Contacto</title>
     </head>
-    <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="new-post.html">Nuevo Post</a>
-                </li>
-                <li>
-                    <a href="categorias.html">Categorias</a>
-                </li>
-                <li>
-                    <a href="faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-            </ul>
+    <body class="bg-light">
+        <nav
+            class="p-0 navbar navbar-expand-lg navbar-light bg-primary fixed-top text-center"
+        >
+            <div class="container-fluid m-0 p-0">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav flex-grow-1 d-flex">
+                        <a
+                            class="py-3 nav-link w-100"
+                            aria-current="page"
+                            href="../index.html"
+                            ><i class="fas fa-home"></i> Home</a
+                        >
+                        <a class="py-3 nav-link w-100" href="#"
+                            ><i class="fas fa-plus"></i> Nuevo Post</a
+                        >
+                        <a
+                            class="py-3 nav-link w-100"
+                            href="../paginas/categorias.html"
+                            ><i class="fas fa-list"></i> Categorias</a
+                        >
+                        <a
+                            class="py-3 nav-link w-100"
+                            href="../paginas/faq.html"
+                            ><i class="fas fa-question"></i> FAQ</a
+                        >
+                        <a
+                            class="py-3 nav-link w-100"
+                            href="../paginas/about.html"
+                            ><i class="fas fa-comment"></i> About</a
+                        >
+                        <a
+                            class="py-3 nav-link w-100 active"
+                            href="../paginas/contacto.html"
+                            ><i class="fas fa-envelope"></i> Contacto</a
+                        >
+                    </div>
+                </div>
+            </div>
         </nav>
 
-        <form action="">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" />
-            <label for="comentario">Comentario</label>
-            <textarea
-                name="comentario"
-                cols="40"
-                rows="5"
-                id="comentario"
-            ></textarea>
-            <button>Enviar</button>
-        </form>
-
-        <footer>
-            <div>
-                © 2020 Copyright:
-                <a class="text-dark" href="">Sin derechos</a>
+        <div class="row m-5 p-5 gx-5">
+            <div class="col-3">
+                <div
+                    class="shadow-sm bg-white border rounded d-flex flex-column gap-2"
+                >
+                    <p
+                        class="h4 text-center shadow-sm bg-secondary text-dark p-2"
+                    >
+                        <i class="fas fa-user"></i> Usuario
+                    </p>
+                    <div class="my-3 d-flex flex-column align-items-center">
+                        <img
+                            class="border rounded-circle w-25"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKNVtRdOiTsz9S7RgCiVrllBBN6c2EFpna6tvo3TY3tk6GyjG8zSxfm6iljuiVb7DHqgM&usqp=CAU"
+                            alt="imagen_perfil"
+                        />
+                        <h3 class="text-center">Nombre Usuario</h3>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-6">
+                <h2>
+                    <span
+                        class="badge rounded-pill shadow-sm bg-secondary text-dark"
+                        ><i class="fas fa-envelope"></i> Contacto
+                    </span>
+                </h2>
+
+                <div class="p-5 bg-white border rounded shadow-sm">
+                    <form>
+                        <div class="mb-3 form-group row">
+                            <div class="form-group col-6">
+                                <label for="name">Nombre</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Nombre"
+                                />
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="apellido">Apellido</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="apellido"
+                                    placeholder="Apellido"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                            <label for="email">Email address</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="Email"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="textarea" class="form-label"
+                                >Contenido</label
+                            >
+                            <textarea
+                                class="form-control"
+                                id="textarea"
+                                rows="3"
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="bg-white border rounded shadow-sm">
+                    <p
+                        class="h4 text-center shadow-sm bg-secondary text-dark p-2"
+                    >
+                        <i class="fas fa-star"></i> Trending
+                    </p>
+                    <div class="my-4 list-group list-group-flush">
+                        <a class="list-group-item" href="#">Post 1</a>
+                        <a class="list-group-item" href="#">Post 2</a>
+                        <a class="list-group-item" href="#">Post 3</a>
+                        <a class="list-group-item" href="#">Post 4</a>
+                        <a class="list-group-item" href="#">Post 5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="p-2 container-fluid bg-primary text-center fixed-bottom">
+            <p>@ 2022 No Copyright</p>
         </footer>
+
+        <script src="../libs/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
     </body>
 </html>

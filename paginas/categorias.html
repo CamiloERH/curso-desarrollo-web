@@ -3,39 +3,84 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/7d4e12bf26.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="../css/estilos.css">
         <title>Categorias</title>
     </head>
-    <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="new-post.html">Nuevo Post</a>
-                </li>
-                <li>
-                    <a href="">Categorias</a>
-                </li>
-                <li>
-                    <a href="faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <body class="pt-5 bg-light">
+        <nav class="p-0 navbar navbar-expand-lg navbar-light bg-primary fixed-top text-center">
+            <div class="container-fluid m-0 p-0">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav flex-grow-1 d-flex">
+                        <a class="py-3 nav-link w-100" aria-current="page" href="../index.html"
+                            ><i class="fas fa-home"></i> Home</a
+                        >
+                        <a class="py-3 nav-link w-100" href="../paginas/new-post.html"><i class="fas fa-plus"></i> Nuevo Post</a>
+                        <a class="py-3 nav-link w-100 active" href="../paginas/categorias.html"><i class="fas fa-list"></i> Categorias</a>
+                        <a class="py-3 nav-link w-100" href="../paginas/faq.html"><i class="fas fa-question"></i> FAQ</a>
+                        <a class="py-3 nav-link w-100" href="../paginas/about.html"><i class="fas fa-comment"></i> About</a>
+                        <a class="py-3 nav-link w-100" href="../paginas/contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
-        Categorias
+        
 
-        <footer>
-            <div>
-                © 2020 Copyright:
-                <a class="text-dark" href="">Sin derechos</a>
+        <div class="mt-5 container">
+            <h2><span class="badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fa-solid fa-list"></i> Categorias </span></h2>
+            <div class="categorias">
+                <div class="categorias__container">
+                    <div class="categorias__content">
+                        <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-gamepad"></i> Videojuegos</p>
+                    </div>
+                    <img class="categorias__img" src="https://images.unsplash.com/photo-1640955045488-9a4bdad646d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Videogames">
+                </div>
+
+                <div class="categorias__container">
+                    <div class="categorias__content">
+                        <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-code"></i> Programación</p>
+                    </div>
+                    <img class="categorias__img" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Videogames">
+                </div>
+                <div class="categorias__container">
+                    <div class="categorias__content">
+                        <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-gamepad"></i> Videojuegos</p>
+                    </div>
+                    <img class="categorias__img" src="https://images.unsplash.com/photo-1640955045488-9a4bdad646d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Videogames">
+                </div>
+
+                <div class="categorias__container">
+                    <div class="categorias__content">
+                        <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-code"></i> Programación</p>
+                    </div>
+                    <img class="categorias__img" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Videogames">
+                </div>
+                
+                
             </div>
+        </div>
+
+        <footer class="p-2 container-fluid bg-primary text-center fixed-bottom">
+            <p>
+                @ 2022 No Copyright
+            </p>
         </footer>
+
+        <script src="../libs/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
     </body>
 </html>
