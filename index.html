@@ -9,10 +9,11 @@
         ></script>
         <link rel="stylesheet" href="css/estilos.css" />
         <title>Rebbit</title>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
         <meta name="description" content="Rebbit es una comunidad donde puedes compartir artículos sobre los temas de tu interés."/>
     </head>
     <body class="pt-5 bg-light">
-        <nav class="p-0 navbar navbar-expand-lg navbar-light bg-primary fixed-top text-center">
+        <nav class="py-2 p-lg-0 navbar navbar-expand-lg navbar-light bg-primary fixed-top text-center">
             <div class="container-fluid m-0 p-0">
                 <button
                     class="navbar-toggler"
@@ -25,7 +26,7 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="mt-2 m-md-0 collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav flex-grow-1 d-flex">
                         <a class="py-3 nav-link w-100 active" aria-current="page" href="#"
                             ><i class="fas fa-home"></i> Home</a
@@ -44,20 +45,8 @@
            <h1 class="">Bienvenido a Rebbit!</h1>
            <p class="display-6"> Comienza a compartir contenido. </p>
         </div>
-
-        <!-- <div class="px-4 pt-5 text-center border-bottom bg-light">
-            <h1 class="display-4 fw-bold">Centered screenshot</h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-              </div>
-            </div>
-        </div> -->
-
        
-        <div class="row m-2 p-2 m-md-5 p-md-5 gx-5">
+        <div class="mb-5 row m-1 p-0 m-md-5 p-md-5 gx-5">
             <div class="mb-3 col-12 col-md-4 col-xl-3">
                 <div class="shadow-sm bg-white border rounded d-flex flex-column gap-2">
                     <p class="h4 text-center shadow-sm bg-secondary text-dark p-2"><i class="fas fa-user"></i> Usuario</p>
@@ -69,34 +58,20 @@
                     <p class="h4 text-center shadow-sm bg-secondary text-dark p-2"><i class="fas fa-list"></i> Categorias</p>
                     <div class="mt-3 d-flex flex-column align-items-center w-100">
                         <div id="categoriasDiv" class="list-group-flush rounded w-100">
-                            <button value="Programación" class="list-group-item w-100"><h5 class="mb-1"><i class="fa-solid fa-code"></i> Programación </h5>
-                            <button value="Videojuegos" class="list-group-item w-100"><h5 class="mb-1"><i class="fas fa-gamepad"></i> Videjuegos </h5>
-                            <button value="Informativo" class="list-group-item w-100 active"><h5 class="mb-1"><i class="fa-solid fa-newspaper"></i> Informativo </h5>
+                            <button value="" class="list-group-item w-100 active"><h5 class="mb-1"> Mostrar todo </h5>
+                            <button value="programacion" class="list-group-item w-100"><h5 class="mb-1"><i class="fa-solid fa-code"></i> Programación </h5>
+                            <button value="videojuegos" class="list-group-item w-100"><h5 class="mb-1"><i class="fas fa-gamepad"></i> Videojuegos </h5>
+                            <button value="informativo" class="list-group-item w-100"><h5 class="mb-1"><i class="fa-solid fa-newspaper"></i> Informativo </h5>
+                            <button value="musica" class="list-group-item w-100"><h5 class="mb-1"><i class="fa-solid fa-music"></i> Música </h5>
                         </div>
                     </div>   
                 </div>  
             </div>
 
             <div class="mb-3 col-12 col-md-8 col-xl-6">
-                <h2><span class="badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-newspaper"></i> Nuevos Articulos </span></h2>
+                <h2><span class="mb-2 badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-newspaper"></i> Nuevos Articulos </span></h2>
                 <div id="postContainer" class="col-12">
-                    
-                    <!-- post 1 -->
-                    <div class="mb-3 card d-flex flex-row gap-2">
-                        <div>
-                            <img class="card-img-left" src="./images/computer-sm.jpg" alt="computer">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Chequea este curso de Programación</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-info stretched-link">Leer</a>
-                            <div class="mt-2 gap-2 d-flex flex-row flex-wrap justify-content-end">
-                                <span class="badge rounded-pill bg-info text-dark">Informativo</span>
-                            </div>
-                        </div>
-                    </div>
-
-
+                    <!-- posts -->
                 </div>
             </div>
 
@@ -104,11 +79,9 @@
                 <div class="bg-white border rounded shadow-sm">
                     <p class="h4 text-center shadow-sm bg-secondary text-dark p-2"><i class="fas fa-star"></i> Trending </p>
                     <div class="my-4 list-group list-group-flush">
-                        <a class="list-group-item" href="#">Post 1</a>
-                        <a class="list-group-item" href="#">Post 2</a>
-                        <a class="list-group-item" href="#">Post 3</a>
-                        <a class="list-group-item" href="#">Post 4</a>
-                        <a class="list-group-item" href="#">Post 5</a>
+                        <a class="list-group-item" href="./posts/post1.html">Lolapalooza Chile 2022</a>
+                        <a class="list-group-item" href="./posts/post2.html">Mi análisis sobre Elden Ring</a>
+                        <a class="list-group-item" href="./posts/post3.html">Lista de webs útiles para la Universidad</a>
                     </div>
                 </div>
             </div>

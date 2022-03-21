@@ -8,7 +8,8 @@
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="../css/estilos.css" />
-        <title>Crear Post</title>
+        <title>Rebbit: Lista de webs útiles para la Universidad </title>
+        <meta name="description" content="Rebbit es una comunidad donde puedes compartir artículos sobre los temas de tu interés."/>
     </head>
     <body class="pt-5 bg-light">
         <nav class="py-2 p-lg-0 navbar navbar-expand-lg navbar-light bg-primary fixed-top text-center">
@@ -29,7 +30,7 @@
                         <a class="py-3 nav-link w-100" aria-current="page" href="../index.html"
                             ><i class="fas fa-home"></i> Home</a
                         >
-                        <a class="py-3 nav-link w-100 active" href="#"><i class="fas fa-plus"></i> Nuevo Post</a>
+                        <a class="py-3 nav-link w-100" href="../paginas/new-post.html"><i class="fas fa-plus"></i> Nuevo Post</a>
                         <a class="py-3 nav-link w-100" href="../paginas/categorias.html"><i class="fas fa-list"></i> Categorias</a>
                         <a class="py-3 nav-link w-100" href="../paginas/faq.html"><i class="fas fa-question"></i> FAQ</a>
                         <a class="py-3 nav-link w-100" href="../paginas/about.html"><i class="fas fa-comment"></i> About</a>
@@ -39,8 +40,7 @@
             </div>
         </nav>
 
-        <div class="mb-5 row my-3 mx-0 p-1 m-md-5 p-md-5 gx-5">
-
+        <div class="mb-5 row m-2 p-2 m-md-5 p-md-5 gx-5">
             <div class="mb-3 col-12 col-md-4 col-xl-3">
                 <div class="shadow-sm bg-white border rounded d-flex flex-column gap-2">
                     <p class="h4 text-center shadow-sm bg-secondary text-dark p-2"><i class="fas fa-user"></i> Usuario</p>
@@ -52,58 +52,19 @@
             </div>
 
             <div class="mb-3 col-12 col-md-8 col-xl-6">
-                <h2>
-                    <span
-                        class="mb-2 badge rounded-pill shadow-sm bg-secondary text-dark"
-                        ><i class="fas fa-plus"></i> Crear Nuevo Articulo
-                    </span>
-                </h2>
-
+                <h2><span class="mb-2 badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fas fa-newspaper"></i> Post 3</span></h2>
                 <div class="col-12">
-                    <div class="p-5 bg-white border rounded shadow-sm">
-                        <form>
-                            <div class="mb-3">
-                                <label for="title" class="form-label"
-                                    >Titulo</label
-                                >
-                                <input
-                                    id="title"
-                                    type="text"
-                                    class="form-control"
-                                />
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="mb-3">
-                                    <label for="formFile" class="form-label"
-                                        >Imagen</label
-                                    >
-                                    <input
-                                        class="form-control"
-                                        type="file"
-                                        id="formFile"
-                                    />
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label
-                                    for="textarea"
-                                    class="form-label"
-                                    >Contenido</label
-                                >
-                                <textarea
-                                    class="form-control"
-                                    id="textarea"
-                                    rows="3"
-                                ></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary" disabled>
-                                <i class="fas fa-paper-plane"></i> Enviar/En construcción. 
-                            </button>
-                        </form>
-                    </div>
+                    <article class="bg-white border rounded p-5">
+                        <header>
+                            <h1 class="display-5">Lista de webs útiles para la Universidad</h1>
+                            <hr>
+                            <p class="lead">
+                                A continuación les va una lista de paginas web utiles que seguro les serán utiles para la Universidad...
+                            </p>
+                        </header>
+                        <img class="img-fluid mb-5 rounded" src="https://images.unsplash.com/photo-1636297461709-0812290a9dcc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80" alt="" srcset="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corporis optio repellat perspiciatis, sit omnis eaque consequuntur amet laboriosam assumenda officia in vero ad dolore quae incidunt mollitia dolor aut.</p>
+                    </article>
                 </div>
             </div>
 
@@ -111,14 +72,14 @@
                 <div class="bg-white border rounded shadow-sm">
                     <p class="h4 text-center shadow-sm bg-secondary text-dark p-2"><i class="fas fa-star"></i> Trending </p>
                     <div class="my-4 list-group list-group-flush">
-                        <a class="list-group-item" href="../posts/post1.html">Lolapalooza Chile 2022</a>
-                        <a class="list-group-item" href="../posts/post2.html">Mi análisis sobre Elden Ring</a>
-                        <a class="list-group-item" href="../posts/post3.html">Lista de webs útiles para la Universidad</a>
+                        <a class="list-group-item" href="./post1.html">Lolapalooza Chile 2022</a>
+                        <a class="list-group-item" href="./post2.html">Mi análisis sobre Elden Ring</a>
+                        <a class="list-group-item" href="./post3.html">Lista de webs útiles para la Universidad</a>
                     </div>
                 </div>
             </div>
-
         </div>
+        
 
         <footer class="p-2 container-fluid bg-primary text-center fixed-bottom">
             <p>

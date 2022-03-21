@@ -11,7 +11,7 @@
         <title>Categorias</title>
     </head>
     <body class="pt-5 bg-light">
-        <nav class="p-0 navbar navbar-expand-lg navbar-light bg-primary fixed-top text-center">
+        <nav class="py-2 p-lg-0 navbar navbar-expand-lg navbar-light bg-primary fixed-top text-center">
             <div class="container-fluid m-0 p-0">
                 <button
                     class="navbar-toggler"
@@ -30,7 +30,7 @@
                             ><i class="fas fa-home"></i> Home</a
                         >
                         <a class="py-3 nav-link w-100" href="../paginas/new-post.html"><i class="fas fa-plus"></i> Nuevo Post</a>
-                        <a class="py-3 nav-link w-100 active" href="../paginas/categorias.html"><i class="fas fa-list"></i> Categorias</a>
+                        <a class="py-3 nav-link w-100 active" href="#"><i class="fas fa-list"></i> Categorias</a>
                         <a class="py-3 nav-link w-100" href="../paginas/faq.html"><i class="fas fa-question"></i> FAQ</a>
                         <a class="py-3 nav-link w-100" href="../paginas/about.html"><i class="fas fa-comment"></i> About</a>
                         <a class="py-3 nav-link w-100" href="../paginas/contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
@@ -39,39 +39,45 @@
             </div>
         </nav>
 
-        
+        <div class="my-5 container">
+            <h2><span class="mb-2 badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fa-solid fa-list"></i> Categorias </span></h2>
+            <div class="categorias pb-5">
+                <a href="../index.html?categoria=videojuegos" class="categorias__link">
+                    <div class="categorias__container">
+                        <div class="categorias__content">
+                            <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-gamepad"></i> Videojuegos</p>
+                        </div>
+                        <img class="categorias__img" src="https://images.unsplash.com/photo-1640955045488-9a4bdad646d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Videogames">
+                    </div>
+                </a>
 
-        <div class="mt-5 container">
-            <h2><span class="badge rounded-pill shadow-sm bg-secondary text-dark"><i class="fa-solid fa-list"></i> Categorias </span></h2>
-            <div class="categorias">
-                <div class="categorias__container">
-                    <div class="categorias__content">
-                        <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-gamepad"></i> Videojuegos</p>
+                <a href="../index.html?categoria=programacion" class="categorias__link">
+                    <div class="categorias__container">
+                        <div class="categorias__content">
+                            <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-code"></i> Programación</p>
+                        </div>
+                        <img class="categorias__img" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Videogames">
                     </div>
-                    <img class="categorias__img" src="https://images.unsplash.com/photo-1640955045488-9a4bdad646d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Videogames">
-                </div>
+                </a>
 
-                <div class="categorias__container">
-                    <div class="categorias__content">
-                        <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-code"></i> Programación</p>
+                <a href="../index.html?categoria=informativo" class="categorias__link">
+                    <div class="categorias__container">
+                        <div class="categorias__content">
+                            <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-newspaper"></i> Informativo </p>
+                        </div>
+                        <img class="categorias__img" src="https://images.unsplash.com/photo-1623039405147-547794f92e9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Diario">
                     </div>
-                    <img class="categorias__img" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Videogames">
-                </div>
-                <div class="categorias__container">
-                    <div class="categorias__content">
-                        <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-gamepad"></i> Videojuegos</p>
-                    </div>
-                    <img class="categorias__img" src="https://images.unsplash.com/photo-1640955045488-9a4bdad646d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Videogames">
-                </div>
+                </a>
 
-                <div class="categorias__container">
-                    <div class="categorias__content">
-                        <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-code"></i> Programación</p>
+                <a href="../index.html?categoria=musica" class="categorias__link">
+                    <div class="categorias__container">
+                        <div class="categorias__content">
+                            <p class="display-6 d-flex flex-column align-items-center"><i class="fa-solid fa-music"></i> Música </p>
+                        </div>
+                        <img class="categorias__img" src="https://images.unsplash.com/photo-1551909496-d9d4a69d4ecd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Guitarra">
                     </div>
-                    <img class="categorias__img" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Videogames">
-                </div>
-                
-                
+                </a>
+
             </div>
         </div>
 
