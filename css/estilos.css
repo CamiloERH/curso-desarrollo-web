@@ -11510,19 +11510,19 @@ fieldset:disabled .btn {
   }
 }
 
-nav a {
+nav .navbar-nav a {
   padding: 1rem;
   opacity: 0.9;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-nav a:hover {
+nav .navbar-nav a:hover {
   background-color: #82e9de;
   opacity: 1;
 }
 
-nav a.active {
+nav .navbar-nav a.active {
   background-color: #82e9de;
 }
 
@@ -11551,9 +11551,6 @@ nav a.active {
 .categorias__container {
   border-radius: 5px;
   max-width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
   position: relative;
 }
 
@@ -11566,6 +11563,12 @@ nav a.active {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 767.98px) {
+  .categorias__container .categorias__content {
+    opacity: 1;
+  }
 }
 
 .categorias__container:hover {
@@ -11583,16 +11586,15 @@ nav a.active {
 .categorias__img {
   border-radius: 5px;
   width: 100%;
-  max-height: 100%;
+  height: 100%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 767.98px) {
-  .categorias .categorias__content {
-    opacity: 1;
-  }
-  .categorias .categorias__img {
+  .categorias__img {
     opacity: 0.3;
   }
 }
@@ -11600,10 +11602,33 @@ nav a.active {
 .card {
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: fadeIn ease 0.5s;
+  -webkit-animation: fadeIn ease 0.5s;
+  -moz-animation: fadeIn ease 0.5s;
+  -o-animation: fadeIn ease 0.5s;
+  -ms-animation: fadeIn ease 0.5s;
 }
 
 .card:hover {
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

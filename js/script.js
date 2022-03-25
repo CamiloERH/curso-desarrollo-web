@@ -112,8 +112,6 @@ function createPostStructure(titulo, contenido, imgSrc, href, categorias) {
 	divBody.appendChild(divCategorias);
 	divBody.appendChild(a);
 
-	
-
 	divContainer.appendChild(img);
 	divContainer.appendChild(divBody);
 
